@@ -1,0 +1,186 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Header */
+
+#header {
+    background-color: #333e42;
+}
+
+#header img{
+    width: 180px;
+}
+#header .row i{
+    color: #fff;
+    font-size: 23px;
+}
+
+
+/* Banner */
+
+#banner {
+    background-image: url('./asset/banner/Bentley_Header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 730px;
+}
+#banner .b-contact{
+    font-size: 44px;
+}
+#banner .container{
+    padding-top: 270px;
+}
+#banner .c-list {
+    margin: 0px 130px;
+}
+#banner .c-list .col {
+    padding: 0;
+}
+#banner .c-list .col p{
+    font-size: 25px;
+    border: 1px solid #e2bf81;
+    padding: 7px 25px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+#banner .c-list .col p:hover{
+    font-size: 25px;
+    color: #222;
+    background-color: #fff;
+}
+
+/* About */
+
+#about{
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+#about .a-header{
+    font-size: 50px;
+}
+#about img{
+    width: 90%;
+}
+
+#about p{
+    line-height: 2;
+}
+
+#about input{
+    font-size: 20px;
+    border: 1px solid #271a02;
+    padding: 7px 25px;
+}
+#about input:hover{
+    background-color: #271a02;
+    border: 1px solid #e2bf81;
+    color: #e2bf81;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+/* Service */
+
+#service{
+    background-color: white;
+}
+#service .s-header{
+    font-size: 45px;
+}
+#service .card{
+    padding: 5px 20px;
+    border: none;
+}
+#service img{
+    width: 60%;
+}
+#service input{
+    font-size: 20px;
+    border: 1px solid #271a02;
+    padding: 7px 25px;
+    margin-bottom: 30px;
+}
+#service input:hover{
+    background-color: #271a02;
+    border: 1px solid #e2bf81;
+    color: #e2bf81;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+/* Client */
+
+#client{
+    color: #fff;
+    padding: 50px;
+    background-color: #333e42;
+}
+
+#client h3{
+    font-size: 30px;
+}
+#client input{
+    font-size: 20px;
+    border: 1px solid #271a02;
+    padding: 7px 25px;
+    margin-top: 20px;
+}
+#client input:hover{
+    background-color: #271a02;
+    border: 1px solid #e2bf81;
+    color: #e2bf81;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+/* Car Card */
+
+#card{
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+#card .card{
+    box-shadow: 6px 6px 18px 0px #0000004d;
+}
+#card .card img{
+    height: 45%;
+}
+#card h5{
+    color: #13adc1;
+}
+
+/* Footer */
+
+#footer{
+    color: #fff;
+    padding: 50px 0;
+    background-color: #333e42;
+}
+#footer h6{
+    color: #e2bf81;
+    font-size: 18px;
+}
+#footer li{
+    list-style: none;
+    font-size: 14px;
+}
+
+/* Final Footer */
+
+#f-footer{
+    background-color: #222a2d;
+}
+#f-footer i{
+    color: #e2bf81;
+    padding: 23px 10px;
+    font-size: 27px;
+}
+#f-footer p{
+    color: #fff;
+    font-size: 14px;
+}
+
