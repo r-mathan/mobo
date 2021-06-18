@@ -1,11 +1,19 @@
-body{
+*{
     font-family: 'Titillium Web', sans-serif;
+}
+p{
+    font-size: 16px;
 }
 
 /* Header */
 
 #header {
     background-color: #333e42;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 95%;
 }
 
 #header img{
@@ -16,6 +24,68 @@ body{
     font-size: 23px;
 }
 
+/* Nav Bar */
+
+#header .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+#header  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  
+#header .sidebar a:hover {
+    color: #e2bf81;
+  }
+  
+#header  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 36px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+  }
+  
+#header .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333e42;
+    color: #e2bf81;
+    border: none;
+    outline: none;
+  }
+  
+#header .openbtn:hover {
+    border: none;
+    outline: none;
+
+  }
+  
+#header #main {
+    transition: margin-right .5s;
+    display:flex;
+    justify-content:flex-end;
+  }
+#header a:hover{
+    color: #e2bf81;
+}
+
 
 /* Banner */
 
@@ -23,33 +93,37 @@ body{
     background-image: url('./asset/banner/Bentley_Header.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: #fff;
     height: 730px;
 }
-#banner .b-contact{
+#banner .col h1{
     font-size: 44px;
+    font-weight: 600px;
 }
 #banner .container{
     padding-top: 270px;
 }
 #banner .c-list {
-    margin: 0px 130px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
-#banner .c-list .col {
-    padding: 0;
-}
-#banner .c-list .col p{
+
+#banner .c-list .b-contact p{
     font-size: 25px;
     border: 1px solid #e2bf81;
     padding: 7px 25px;
     margin: 0 10px;
     border-radius: 4px;
 }
-#banner .c-list .col p:hover{
+#banner .c-list .b-contact p:hover{
     font-size: 25px;
     color: #222;
     background-color: #fff;
 }
+
 
 /* About */
 
@@ -57,16 +131,27 @@ body{
     background-color: #fff;
     padding-bottom: 20px;
 }
-
+#about h1{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #333333;
+    font-family: 'Titillium Web',Helvetica,Arial,Lucida,sans-serif;
+}
 #about .a-header{
     font-size: 50px;
 }
 #about img{
-    width: 90%;
+    width: 95%;
+}
+#about .image{
+    padding: 0;
+    margin: 0;
 }
 
 #about p{
     line-height: 2;
+    color: #333333;
 }
 
 #about input{
@@ -97,6 +182,9 @@ body{
 #service img{
     width: 60%;
 }
+#service .s-para p{
+    line-height: 2;
+}
 #service input{
     font-size: 20px;
     border: 1px solid #271a02;
@@ -115,12 +203,19 @@ body{
 
 #client{
     color: #fff;
-    padding: 50px;
+    padding: 90px;
     background-color: #333e42;
 }
 
-#client h3{
+#client h1{
     font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#client .slider-row {
+    padding: 60px 0;
+    width: 70%;
+    margin: 0 auto;
 }
 #client input{
     font-size: 20px;
@@ -144,10 +239,8 @@ body{
 }
 
 #card .card{
+    height: 100%;
     box-shadow: 6px 6px 18px 0px #0000004d;
-}
-#card .card img{
-    height: 45%;
 }
 #card h5{
     color: #13adc1;
@@ -167,6 +260,7 @@ body{
 #footer li{
     list-style: none;
     font-size: 14px;
+    line-height: 2;
 }
 
 /* Final Footer */
@@ -184,3 +278,146 @@ body{
     font-size: 14px;
 }
 
+/* --------------------------------------------------------------------------------------------------
+Contact-page
+----------------------------------------------------------------------------------------------------- */
+
+/* Banner */
+
+#c-banner{
+    background-image: url('./asset/banner/Bentley_Header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 580px;
+    width: 100%;
+}
+#c-banner .col h1{
+    font-size: 44px;
+    font-weight: 600px;
+}
+#c-banner .container{
+    padding-top: 160px;
+}
+#c-banner .c-list {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#c-banner .c-list .b-contact p{
+    font-size: 25px;
+    border: 1px solid #e2bf81;
+    padding: 7px 25px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+#c-banner .c-list .b-contact p:hover{
+    font-size: 25px;
+    color: #222;
+    background-color: #fff;
+}
+
+/* contact */
+
+#contact form .row{
+    padding: 12px 0;
+}
+#contact form input{
+    height: 45px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+}
+#contact form textarea{
+    background-color: #eee;
+    border: none;
+    outline: none;
+}
+#contact form button{
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------------------------------------------- 
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap 
+-----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+
+    #banner .col h1{
+        font-size: 37px;
+        text-align: center;
+        font-weight: 600;
+    }
+    #banner .c-list .col-12 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    #banner .c-list .col-12 p:hover{
+        font-size: 20px;
+    }
+    #c-banner .col h1{
+        font-size: 37px;
+        text-align: center;
+        font-weight: 600;
+    }
+    #c-banner .c-list .col-12 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    #c-banner .c-list .col-12 p:hover{
+        font-size: 20px;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+
+}    
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+    #banner .col h1{
+        font-size: 44px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #c-banner .col h1{
+        font-size: 44px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #about h1{
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+
+}

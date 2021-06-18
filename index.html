@@ -6,109 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="./style.css">  
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Slick Carousel (Jquery) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"  />
+
+
 </head>
 <body>
 
     <!-- Header -->
+
     <header id="header">
         <div class="container">
             <div class="row d-flex align-items-center py-3">
                 <div class="col">
                   <img src="./asset/Regency_Logo.svg" alt="Logo">
                 </div>
-                <div class="col row d-flex justify-content-end">
-                    <i class="fas fa-bars"></i>
+                <div class="col row d-flex justify-content-end nav-section">
+                    <div id="mySidebar" class="sidebar">
+                        <a href="#" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="#" class ="active">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">View Gallery</a>
+                        <a href="#">Get a Quotes</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                      
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>    
+                    </div>
                 </div>
+            </div>
         </div>
     </header>
 
+    <!-- Header End -->
+
+
     <!-- Banner -->
+
     <div id="banner">
         <div class="container">
             <div class="row text-center">
-                <div class="col b-contact d-flex justify-content-center py-5">
-                    FIND A VEHICLE,FOR EVERY OCCASION
+                <div class="col d-flex justify-content-center py-5">
+                    <h1>FIND A VEHICLE,FOR EVERY OCCASION</h1>
                 </div>
             </div>
             <div class="row c-list d-flex align-items-center text-center">
-                <div class="col col-lg-4 col-md-12 col-sm-12 py-2">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2 b-contact">
                     <p>Get a Quote</p>
                 </div>
-                <div class="col col-lg-4 col-md-12 col-sm-12 py-2">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2 b-contact">
                     <p>View Gallery</p>
                 </div>
-                <div class="col col-lg-4 col-md-12 col-sm-12 py-2">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 py-2 b-contact">
                     <p>02920100010</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Banner End-->
+
+
     <!-- About -->
 
     <div id="about">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col b-contact d-flex justify-content-center py-5 a-header">
-                    We are Regancy
+            <div class="row">
+                <div class="col-12 py-5 a-header">
+                    <h1>We are Regancy</h1>
                 </div>
             </div>
             <div class="row d-flex align-items-center pb-5">
-                <div class="col">
+                <div class="col-12 col-lg-6 col-sm-12 text-center image">
                     <img src="./asset/about/image-2.jpg" alt="About image">
                 </div>
-                <div class="col">
+                <div class="col col-md-12 col-lg-5 pt-4">
                     <p>Regency is the leading authority for luxury transport hire, putting car-lovers in contact with stunning chauffeur and self-drive vehicles throughout the UK. We have a wide fleet of vehicles to choose from.</p>
                     <p>We provide limo hire services to our customers in the UK for a very long time, and we are proud that we have always stood on the top rating limo hire company in the UK.</p>
                     <input type="button" value="View our Gallery">
                 </div>
-
             </div>
         </div>
     </div>
+
+    <!-- AboutEnd -->
+
 
     <!-- Sevices -->
 
     <div id="service">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col b-contact d-flex justify-content-center pt-5 s-header">
+                <div class="col b-contact d-flex justify-content-center pt-3 s-header">
                     Service
                 </div>
             </div>
             <div class="row d-flex align-items-center">
-                <div class="col b-contact d-flex justify-content-center text-center py-5 s-para">
+                <div class="col d-flex justify-content-center text-center py-5 s-para">
                     <p>The events we cover are endless, from corporate and executive hire to birthdays, school trips and sporting events, making sure that we can meet and exceed customer expectations. Though we provide services for several occasions, we are proud of our fleet of Bentley Hire, Rolls Royce Hire and Wedding car hire.</p>
                 </div>
             </div>
             <div class="row d-flex align-items-center pb-5">        
                 <div class="col d-flex">
                    <div class="card-deck">
-                        <div class="card text-center pt-3">
-                            <img src="./asset/services/1-search.png"  class="rounded mx-auto d-block pb-4" alt="search">
-                            <h3 class="pb-3">Search</h3>
-                            <p>Our quote form is very simple to use, so with 2 minutes of your time, you can get a competitive quote for limo hire, coach hire, party bus hire, wedding car hire and prom car hire</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card text-center pt-3">
+                                <img src="./asset/services/1-search.png"  class="rounded mx-auto d-block pb-4" alt="search">
+                                <h3 class="pb-3">Search</h3>
+                                <p>Our quote form is very simple to use, so with 2 minutes of your time, you can get a competitive quote for limo hire, coach hire, party bus hire, wedding car hire and prom car hire</p>
+                            </div>
                         </div>
-                        <div class="card text-center pt-3">
-                            <img src="./asset/services/2-compare.png"  class="rounded mx-auto d-block pb-4" alt="compare">
-                            <h3 class="pb-3">Compare</h3>
-                            <p>With finding a luxury vehicle hire deal stressful, we have gone to great lengths to streamline the shopping process, building regency.co.uk to be the nations one-stop-shop for vehicle hire.</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card text-center pt-3">
+                                <img src="./asset/services/2-compare.png"  class="rounded mx-auto d-block pb-4" alt="compare">
+                                <h3 class="pb-3">Compare</h3>
+                                <p>With finding a luxury vehicle hire deal stressful, we have gone to great lengths to streamline the shopping process, building regency.co.uk to be the nations one-stop-shop for vehicle hire.</p>
+                            </div>
                         </div>
-                        <div class="card text-center pt-3">
-                            <img src="./asset/services/3-book.png" class="rounded mx-auto d-block pb-4" alt="book">
-                            <h3 class="pb-3">Book</h3>
-                            <p>You can now secure your dream wedding, corporate or prom vehicle with the click of a button, with our new online booking system permitting you to select your chosen vehicles, length of hire and destination.</p>
-                         </div>
-                        <div class="card text-center pt-3">
-                            <img src="./asset/services/4.relax.png"  class="rounded mx-auto d-block pb-4"  alt="relax">
-                            <h3 class="pb-3">Relax</h3>
-                            <p>It’s time to sit back and relax your vehicle is now booked and you’re in safe hands. Please check your email inbox for your booking confirmation, this will include details of the vehicle hired and date and time of the occasion.</p>
-                         </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card text-center pt-3">
+                                <img src="./asset/services/3-book.png" class="rounded mx-auto d-block pb-4" alt="book">
+                                <h3 class="pb-3">Book</h3>
+                                <p>You can now secure your dream wedding, corporate or prom vehicle with the click of a button, with our new online booking system permitting you to select your chosen vehicles, length of hire and destination.</p>
+                             </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card text-center pt-3">
+                                <img src="./asset/services/4.relax.png"  class="rounded mx-auto d-block pb-4"  alt="relax">
+                                <h3 class="pb-3">Relax</h3>
+                                <p>It’s time to sit back and relax your vehicle is now booked and you’re in safe hands. Please check your email inbox for your booking confirmation, this will include details of the vehicle hired and date and time of the occasion.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,6 +162,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Sevices End-->
+
 
     <!-- Client -->
 
@@ -134,59 +180,77 @@
                     <p>Welcome to our corporate transport rental service, a section of our business we take pride in. We are renowned for supplying vehicles for every occasions.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    Slider
+            <div class="row slider-row">
+                <div class="col" id="slider">
+                    <img src="./asset/client/1-kia.png" alt="">
+                    <img src="./asset/client/2-channel4.png" alt="">
+                    <img src="./asset/client/3-Amex.png" alt="">
+                    <img src="./asset/client/4-loreal.png" alt="">
+                    <img src="./asset/client/5-sky.png" alt="">
+                    <img src="./asset/client/6-redbull.png" alt="">
+                    <img src="./asset/client/7-paddypower.png" alt="">
+                    <img src="./asset/client/8-cocacola.png" alt="">
+                    <img src="./asset/client/9-liverpool.png" alt="">
+                    <img src="./asset/client/10-dominos.png" alt="">                  
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <input type="button" value="View our Corporate Clients">
                 </div>
-            </div>
-            
+            </div>       
         </div>
     </div>
+
+    <!-- Client End-->
 
     <!-- Car Card -->
      
     <div id="card">
         <div class="container">
             <div class="card-deck">
-                <div class="card">
-                  <img src="./asset/car-card/1-post_latest_image-400x250.jpg" class="card-img-top w-100" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Supercar hire Essex: What are my options?</h5>
-                    <p class="card-text">Here at Regency, we specialise in Supercar hire in Essex, eager to share our wonderful fleet of cars with the people and visitors of the county. In this article, we aim to explore the many options available, giving you a clear picture of the immense possibilities at...</p>
-                  </div>
+                <div class="col-12 col-md-12 col-lg-4 pb-5">
+                    <div class="card">
+                        <img src="./asset/car-card/1-post_latest_image-400x250.jpg" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Supercar hire Essex: What are my options?</h5>
+                          <p class="card-text">Here at Regency, we specialise in Supercar hire in Essex, eager to share our wonderful fleet of cars with the people and visitors of the county. In this article, we aim to explore the many options available, giving you a clear picture of the immense possibilities at...</p>
+                        </div>
+                      </div>
                 </div>
 
-                <div class="card">
-                  <img src="./asset/car-card/2-post_limo-400x250.jpg" class="card-img-top w-100"   alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Party Bus Hire Brighton</h5>
-                    <p class="card-text">In all of the UK, you’d be hard pushed to find a city that parties better than Brighton. Renowned for its vibrant cultural scene, lively residents and burgeoning nightlife scene, it’s the perfect place to enjoy an evening you’ll never forget. But if you’re celebrating...</p>
-                  </div>
+                <div class="col-12 col-md-12 col-lg-4 pb-5">
+                    <div class="card">
+                        <img src="./asset/car-card/2-post_limo-400x250.jpg" class="card-img-top w-100 c-center"   alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Party Bus Hire Brighton</h5>
+                          <p class="card-text">In all of the UK, you’d be hard pushed to find a city that parties better than Brighton. Renowned for its vibrant cultural scene, lively residents and burgeoning nightlife scene, it’s the perfect place to enjoy an evening you’ll never forget. But if you’re celebrating...</p>
+                        </div>
+                      </div>
                 </div>
 
-                <div class="card">
-                  <img src="./asset/car-card/3-post_limo-400x250.jpg" class="card-img-top w-100" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Top reasons to hire a limo in Essex</h5>
-                    <p class="card-text">Essex has over the past 5 years become the party central of the UK. Partly enhanced by the BAFTA-winning show, The Only Way is Essex, the county is somewhere that we at Regency enjoy working in. Specialising in Essex limo hire, we have below detailed the top 5 reasons...</p>
-                  </div>
-
+                <div class="col-12 col-md-12 col-lg-4 pb-5">
+                    <div class="card">
+                        <img src="./asset/car-card/3-post_limo-400x250.jpg" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Top reasons to hire a limo in Essex</h5>
+                            <p class="card-text">Essex has over the past 5 years become the party central of the UK. Partly enhanced by the BAFTA-winning show, The Only Way is Essex, the county is somewhere that we at Regency enjoy working in. Specialising in Essex limo hire, we have below detailed the top 5 reasons...</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
+
+    <!-- Car Card End-->
+
 
     <!-- Footer -->
 
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg pb-5">
                     <h6>DISCOVER</h6>
                     <li>Limo Hire</li>
                     <li>Wedding Car Hire</li>
@@ -197,7 +261,7 @@
                     <li>Novelty Vehicle Hire</li>
                     <li>Horse and Carriage</li>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg pb-5">
                     <h6>COMPANY</h6>
                     <li>About Us</li>
                     <li>Careers</li>
@@ -208,14 +272,14 @@
                     <li>Gallery</li>
                     <li>Contact Us</li>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg pb-5">
                     <h6>LEGAL</h6>
                     <li>Cookie Policy</li>
                     <li>Privacy Policy</li>
                     <li>FAQ</li>
                     <li>Terms</li>
                 </div>  
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5">
                     <h6>LATEST POSTS/PAGES</h6>
 
                     <li>Supercar hire Essex: What are my options?</li>
@@ -229,25 +293,86 @@
         </div>
     </div>
 
+    <!-- Footer End-->
+
+
     <!-- Final Footer -->
 
     <div id="f-footer">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-12 col-lg-4 text-center">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-google-plus-g"></i>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-12 col-lg-4 pb-2 pt-4 text-center ">
                     <p>All Images/Content © 2019 Regency.co.uk</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Final Footer End-->
+
+    <!-- Jquery -->
+
+    <!-- Jqurey CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Slick-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+
+    var $jq = jQuery.noConflict();
+    $jq(document).ready(function(){
+        $jq('#slider').slick({
+        //   dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        responsive: [
+        {
+        breakpoint: 992,
+            settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+            }
+        },
+        {
+        breakpoint: 768,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+            }
+        },
+        {
+        breakpoint: 576,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+        ]
+    });
+    });
+
+    </script>
+
+
+    <!-- External Javascript Link -->
+    <script src="./main.js"></script>
+
+    <!-- boostrap  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
